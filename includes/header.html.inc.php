@@ -17,7 +17,8 @@ $pages = array(
     'Cross' => $dirPages . 'cross.php',
     'Piste' => $dirPages . 'piste.php',
     'Enfants' => $dirPages . 'enfants.php',
-    'Nous contacter' => $dirPages . 'nous-contacter.php'
+    'Nous contacter' => $dirPages . 'nous-contacter.php',
+    'Alcoolemie' => $dirPages . 'alcoolemie.php'
 );
 ?>
 
