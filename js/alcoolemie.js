@@ -8,8 +8,9 @@ window.addEventListener('load', function () {
 
     // Parcours de tabInputs en s'appuyant sur le nombre de <input> et sur tabEvents
     for (let i = 0; i < tabInputs.length; i++) {
-        // Ajout d'un Listener sur tous les <input> sur les évènements listés dans tabEvents
         tabInputs[i].addEventListener('keyup', gestionAlcoolemie);
+        tabInputs[i].addEventListener('change', gestionAlcoolemie);
+        tabInputs[i].addEventListener('click', gestionAlcoolemie);
     }
 });
 
@@ -86,7 +87,7 @@ function getAlcoolPur(nbVerres) {
     return uniteAlcool * nbVerres;
 }
 
-    function getCoefDiffusion(sexe) {
+function getCoefDiffusion(sexe) {
     const coefDiffuH = 0.7, coefDiffuF = 0.6;
     if (sexe === 'homme') {
         return coefDiffuH;
@@ -169,4 +170,3 @@ function getInt(id) {
 function getString(id) {
     return window.document.querySelector(id).value;
 }
-
