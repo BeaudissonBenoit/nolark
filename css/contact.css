@@ -76,7 +76,7 @@
     margin-right: 10px;
 }
 
-input:valid, input:not([type="button"]):not([type="reset"]) {
+input:valid, :not(input[type="submit"]) {
     color: green;
 }
 input:invalid {
