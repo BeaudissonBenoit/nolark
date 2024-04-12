@@ -1,7 +1,8 @@
 <?php
 
 try {
-	$cnx = new PDO('mysql:host=127.0.0.1;dbname=nolark', 'nolarkuser', 'nolarkpwd');
+	$cnx = new PDO('mysql:host=sql109.infinityfree.com;dbname=if0_36218787_nolark', 'if0_36218787', '7RCPnX8plJu');
+	// $cnx = new PDO('mysql:host=sql109.infinityfree.com ;dbname=if0_36218787_nolark', 'username', ' password');
     // Être plus précis dans les messges d'erreur :
     $cnx->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
